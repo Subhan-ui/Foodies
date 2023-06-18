@@ -1,9 +1,8 @@
-
 body {
   background-color: rgb(230, 226, 226);
   /* background-color: #D9AFD9;
   background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
-  
+
   /* scroll-behavior: smooth; */
   /* float: left; */
   margin: 0;
@@ -19,14 +18,89 @@ body {
 .main {
   width: 72vw;
   border: 0px;
-  margin: 12px;
+  margin: 1rem;
   margin-bottom: 10px;
   background-color: white;
   border-radius: 12px;
   overflow-y: unset;
-  height: 76vh;
+  height: 89vh;
   /* grid-column: 1 / 2; */
 }
+.main1{
+  margin: auto;
+}
+.card{
+  width: 12vw;
+  height: 16.5rem
+}
+@media (max-width: 1024px)  {
+  .main{
+    width: 75vw;
+    overflow-y: scroll;
+
+  }
+  
+  .card{
+    width: 16.65555vw;
+    height: 16.5rem
+  }
+  .col-md-3{
+    flex: 0 0 auto;
+    width: 33%;
+  }
+  
+}
+@media (max-width: 768px) and (min-width:425px) {
+  .main{
+    width: 96vw;
+    overflow-y: scroll;
+    margin-right: 1rem;
+  
+  }
+  .card{
+    width: 33.055vw;
+    height: 16.5rem
+  }
+  .col-md-3{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  *{
+    overflow-y: scroll;
+  }
+  
+}
+@media (max-width: 425px)  {
+  .main{
+    width: 92%;
+    overflow-y: scroll;
+  
+  
+  }
+.card{
+  width: 34.333333vw;
+  height: 16.5rem
+}
+  *{
+    overflow-y: scroll;
+  }
+  /* .main{
+    width: 96%;
+    overflow-y: scroll;
+
+  } */
+  .card{
+    width: 70vw;
+    height: 16.5rem
+  }
+  .col-md-3{
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+}
+
+
 /* for Links.js */
 
 /* for Products.js */

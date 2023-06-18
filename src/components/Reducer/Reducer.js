@@ -9,7 +9,6 @@ const initial_state = {
 const Reducer = (state, action) => {
   switch (action.type) {
     case "add_to_cart":
-      
       const existingProductID = state.items.findIndex((cur) => {
         return cur.id === action.item.id;
       });
@@ -72,21 +71,20 @@ const Reducer = (state, action) => {
           return cur;
         })
         .filter((item) => item !== null);
-        // const existingItem1 = state.items.find(
-        //   (cur) => cur.id === action.payload
-        // );
+      // const existingItem1 = state.items.find(
+      //   (cur) => cur.id === action.payload
+      // );
       return {
         ...state,
         items: newItems1,
         totalPrice: calculateTotalPrice(newItems1),
       };
     case "Remove_item":
-      const removedItem = state.items.find(cur=> cur.id === action.payload)
+      const removedItem = state.items.find((cur) => cur.id === action.payload);
       let filtItem = state.items.filter((cur) => {
         return cur.id !== action.payload;
       });
-      return { items: filtItem,
-      totalPrice: calculateTotalPrice(filtItem) };
+      return { items: filtItem, totalPrice: calculateTotalPrice(filtItem) };
 
     default:
       return state;

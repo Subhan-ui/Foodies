@@ -1,72 +1,148 @@
-.nav{
-    list-style-type: none;
-    display: flex;
-    /* margin: 10px 0px 0px 241px; */
-    width: 100%;
-    height: 55px;
-    margin-top: 0px;
-    align-items: center;
-    background-color: antiquewhite;
-    }
-    .gradient{
-      background-color: #D9AFD9;
-    border-radius: 23px;
+.nav {
+  list-style-type: none;
+  display: flex;
+  /* margin: 10px 0px 0px 241px; */
+  width: 100%;
+  height: 55px;
+  margin-top: 0px;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.gradient {
+  background-color: #d9afd9;
+  /* border-radius: 23px; */
 
-background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-
-    }
-.divsearch{
-    margin-right: 0.6vw;
-    margin-left: 23vw;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+.divsearch {
+  margin-right: 0.6vw;
+  margin-left: 23vw;
 }
 /* .orders{
     margin-left: 0.5rem;
     position: absolute;
     right: 20px;
 } */
-#box{
-    height: 4.56666vh;
-    border-radius: 55px;
-    width: 28vw;
-border: 1px solid #eaeaea;
+#box {
+  height: 4.76666vh;
+  border-radius: 8px;
+  /* margin: 5px; */
+  width: 28vw;
+  padding: 5px;
+  border: 1px solid #eaeaea;
+}
+#div{
+  display: flex;
+  flex-direction: row;
 }
 
-.btn-search{
-    height: 30px;
-    width: 30px; 
-    cursor: pointer;
-    font-size: 16px;
-    border: none;
-    border-radius: 55px;
-    background-color: rgb(210, 255, 30);
-    /* background-color: transparent; */
+.btn-search {
+  height: 4.5vh;
+  width:  2vw;
+  cursor: pointer;
+  font-size: 16px;
+  overflow-y: hidden;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(210, 255, 30);
+  /* background-color: transparent; */
 }
 .btn-search:hover {
-    background-color: rgb(173, 206, 40);
-    color: white;
-  }
-  .btn-add{
-    background-color: rgb(225, 94, 94);
-    margin-left: 80px;
-    border-radius: 10px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    border: 0px;
-    color: rgb(246, 224, 224);
-  }
-  .btn-add:hover{
-    background-color: rgb(199, 107, 107);
-  }
-  .qr{
-    margin-left: 10px;
-  }
-.logo{
+  background-color: rgb(173, 206, 40);
+  color: white;
+}
+.btn-add {
+  background-color: rgb(225, 94, 94);
+  margin-left: 80px;
+  border-radius: 10px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+  color: rgb(246, 224, 224);
+}
+.btn-add:hover {
+  background-color: rgb(199, 107, 107);
+}
+.qr {
+  margin-left: 10px;
+}
+.logo {
   width: 3vw;
   /* height: 24vh; */
-  border-radius: 55px;
+  /* border-radius: 55px; */
 }
+@media (max-width: 786px){
+.btn-search{
+  width: 5vw;
+}
+}
+@media (max-width: 505){
+.searchBox{
+  width: 95vw;
+}
+#box{
+  width:61vw;
+}
+}
+/* @media (max-width: 505){
+.searchBox{
+  width: 89vw;
+}
+} */
 /* search box 
 total orders
 search box button
  */
+ .titleofnav{
+  overflow-y: hidden;
+ }
+ .sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: scroll;
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

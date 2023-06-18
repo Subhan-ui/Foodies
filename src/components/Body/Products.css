@@ -1,7 +1,7 @@
 .container1 {
   /* grid-column: 2 / 3; */
   background-color: white;
-  height: 88.3vh;
+  height: 95vh;
   width: 25vw;
   border: 0px;
   padding: 12px;
@@ -139,4 +139,49 @@ p {
 .price{
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 1024px){
+.img{
+  height: 13vh;
+}
+ul li h5,p{
+  margin-left: 2px;
+}
+.hello{
+  width: 21vw;
+}
+.adddelete{
+  right: 0px;
+}
+.number{
+  width: 25px;
+  /* margin-right: 0; */
+}
+}
+@media (max-width: 768px){
+  ul li h5,p{
+    margin-left: 10px;
+  }
+.container1{
+  width: 95%;
+  height: 100vh;
+}
+.hello{
+  width:97% ;
+}
+.close1{
+  width: 4vw;
+}
+.close2{
+  width: 4vw;
+}
+.img{
+  width: 18vw;
+  height: 16vh;
+}
+.number{
+  width: 35px;
+  /* margin-right: 0; */
+}
 }

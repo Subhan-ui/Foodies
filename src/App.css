@@ -3,7 +3,42 @@
     
     
 }
+body{
+  background-image: url("svg.png");
+}
 .column {
     display: flex;
     flex-direction: column;
+  }
+  .whole{
+    display: flex;
+    justify-content: space-between;
+  }
+  .whole2{
+    display: flex;
+  }
+  .whole3{
+     display: flex;
+     flex-direction: column
+  }
+
+  @media (max-width: 768px){
+  .whole{
+    display: flex;
+    
+  }
+  .whole2{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .whole3{
+    display: flex;
+  }
+  *{
+    overflow-y:scroll;
+  }
+  }
+  @media (max-width:1024px){
+    
   }
