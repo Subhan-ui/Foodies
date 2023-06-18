@@ -1,0 +1,35 @@
+.but {
+    /* grid-column: 1 / 2; */
+    border-radius: 12px;
+    margin: 12px;
+    background-color: white;
+    width: 72vw;
+    border: 0px;
+    /* margin: 0px; */
+    /* margin-top: 70px; */
+    padding: 12px;
+    margin-bottom: 10px;
+    overflow-x:auto;
+    height: 13vh;
+    text-align: center;
+    /* overflow-y: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+/* .btn1 { */
+    /* display: inline-block; */
+    /* margin-bottom: 0px; */
+  /* } */
+  /* .you {
+    align-items: center;
+    justify-content: center;
+  } */
+  .card-title {
+    overflow-y: hidden;
+  }
+  .btn-secondary {
+    background-color: rgb(230, 226, 226);
+    color: black;
+    width: 80px;
+    border: 0px;
+  }

@@ -1,0 +1,142 @@
+.container1 {
+  /* grid-column: 2 / 3; */
+  background-color: white;
+  height: 88.3vh;
+  width: 25vw;
+  border: 0px;
+  padding: 12px;
+  overflow-y: hidden;
+  /* margin-top: ; */
+
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 10px;
+}
+.container2 {
+  border-radius: 10px;
+  overflow-y: scroll;
+  background-color: rgb(230, 226, 226);
+  height: 62vh;
+  padding-right: 7px;
+  padding-top: 7px;
+  margin-top: 7px;
+  
+}
+h5 {
+  overflow-y: hidden;
+}
+.container3 {
+  border-radius: 10px;
+  overflow-y: hidden;
+  background-color: rgb(230, 226, 226);
+  margin-top: 5px;
+}
+.container4 {
+  margin-top: 10px;
+  /* margin-bottom: 0px; */
+}
+.img {
+  height: 10vh;
+  /* margin: 4px; */
+  width: 6vw;
+  border-radius: 12px;
+  /* margin-left: 0; */
+  /* position: absolute;
+    left: 0; */
+}
+.close {
+  border: 0px;
+  display: relative;
+  background-color: transparent;
+  /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; */
+}
+.closeButton {
+  display: absolute;
+  right: 0;
+  top: 0;
+  height: min-content;
+}
+.adddelete {
+  display: absolute;
+  bottom: 0;
+  right: 10px;
+  height: min-content;
+
+  border: 1px solid black;
+}
+.close1 {
+  display: absolute;
+  bottom: 0;
+  right: 0px;
+  background-color: transparent;
+  border: 0px;
+  width: 1.4vw;
+}
+.close2 {
+  width: 1.4vw;
+  border: 0px;
+  display: absolute;
+  bottom: 0;
+  right: 0px;
+  margin: 0px;
+  background-color: transparent;
+}
+.close1:hover {
+  background-color: #4d4d4d4d;
+  color: white;
+}
+.close2:hover {
+  background-color: #4d4d4d4d;
+  color: white;
+}
+span {
+  border: 0px;
+  height: 12px;
+  width: 23px;
+  display: contents;
+}
+/* text-align: right; */
+
+pre {
+  margin-bottom: 0px;
+}
+.hello {
+  width: 22vw;
+  background-color: white;
+  margin-top: 8px;
+  border-radius: 12px;
+  position: relative;
+}
+.list {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  /* margin: 2px 10px 2px 2px; */
+  width: 90vw;
+}
+ul li h5,
+p {
+   margin-left: 22px; 
+  /* position: absolute;
+    left: 0; */
+}
+.number {
+  width: 35px;
+  margin: 0;
+  margin-right: 0;
+  align-items: center;
+}
+.adddelete {
+  position: absolute;
+  bottom: 0px;
+}
+.closeButton {
+  position: absolute;
+  top: 0px;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,9 @@
+*{
+    overflow-x:hidden;
+    
+    
+}
+.column {
+    display: flex;
+    flex-direction: column;
+  }
