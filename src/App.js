@@ -8,6 +8,7 @@ import img1 from "./mar.jpg";
 import img2 from "./mar1.jpg";
 import img3 from "./mar3.jpg";
 import { useState } from "react";
+import About from "./components/About";
 
 const items = [
   {
@@ -141,6 +142,7 @@ console.log(displayItems)
   // };
 
   return (
+    
     <div className="whole">
       <div className="column">
         <Navbar
@@ -148,7 +150,7 @@ console.log(displayItems)
           items={capitalize(items)}
           arr={categories}
         />
-
+        
         <div className="whole2">
           <div className="whole3">
             {/* <Links /> */}
@@ -156,9 +158,11 @@ console.log(displayItems)
           </div>
 
           <Products />
+
         </div>
       </div>
     </div>
+    
   );
 }
 

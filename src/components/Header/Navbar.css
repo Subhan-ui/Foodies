@@ -67,6 +67,9 @@
 .qr {
   margin-left: 10px;
 }
+.icon{
+  color: black;
+}
 .logo {
   width: 3vw;
   /* height: 24vh; */
@@ -94,6 +97,7 @@
 total orders
 search box button
  */
+ 
  .titleofnav{
   overflow-y: hidden;
  }
