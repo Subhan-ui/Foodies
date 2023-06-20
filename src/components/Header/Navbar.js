@@ -85,6 +85,7 @@ function CollapsibleExample(props) {
   // ];
   const openNav=()=> {
    setWidth(200) ;
+   
   }
   
   /* Set the width of the side navigation to 0 */
@@ -100,7 +101,7 @@ function CollapsibleExample(props) {
     <a href="#" className="closebtn" onClick={closeNav}>&times;</a>
     <a href="#">About</a>
     <a href="#">Add New Items</a>
-    <a href="#" onClick={handleCategoryChange("")}>All Items</a>
+    <a href="#" onClick={()=>handleCategoryChange("")}>All Items</a>
    {props.arr.length > 0 &&props.arr.map((ar,ind) => {
     return <a key={ind} href="#" onClick={()=>handleCategoryChange(ar)}>{ar}</a>})}
   </div>
