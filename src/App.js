@@ -9,6 +9,7 @@ import img2 from "./mar1.jpg";
 import img3 from "./mar3.jpg";
 import { useState } from "react";
 import About from "./components/About";
+import Bill from "./components/Body/Bill";
 
 const items = [
   {
@@ -112,12 +113,12 @@ function App() {
   //categorization code
   const [selectedCategory, setSelectedCategory] = useState("");
 
-  const filteredItems = items.filter((item) =>
-    item.category === selectedCategory
-  );
+  
 
-  const displayItems = selectedCategory === "" ? items : filteredItems;
-console.log(displayItems)
+  const displayItems = selectedCategory === "" ? items : items.filter((item) =>
+  item.category === selectedCategory
+);
+// console.log(displayItems)
   const categoriesSet = new Set(items.map((item) => item.category));
   const categories = Array.from(categoriesSet);
 
@@ -162,6 +163,7 @@ console.log(displayItems)
         </div>
       </div>
     </div>
+   
     
   );
 }

@@ -1,0 +1,13 @@
+.BillPage{
+    width: 30vw;
+    
+    margin: 0 auto;
+    border: 2px solid black;
+}
+h2,p{
+    margin: 0;
+}
+hr{
+    width: 30vw;
+
+}

@@ -12,6 +12,60 @@
   margin-right: 12px;
   border-radius: 10px;
 }
+/**/
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  margin-top: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "hello";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
+}
+
+
+
 .container2 {
   border-radius: 10px;
   overflow-y: scroll;
@@ -51,6 +105,108 @@ h5 {
   /* display: flex;
     justify-content: flex-end;
     align-items: flex-start; */
+}
+.modal{
+  z-index: 1;
+  border:3px double lightskyblue;
+  width: 70vw;
+  height:auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 5% 15%;
+  background-color:#fff;
+
+}
+/* .modal_content{
+
+} */
+#modal_header{
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  justify-content:space-between;
+  margin-bottom: 0;
+}
+.modal_body{
+  display: flex;
+  flex-direction: row;
+
+}
+.modal_body1{
+  padding: 0 0 5% 5%;
+  width: 45vw;
+}
+.modal_body11{
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  justify-content: space-around;
+}
+.paymethods{
+  justify-content: space-around;
+  padding: 1%;
+  display: flex;
+
+}
+#payment{
+  width: 20vw;
+  height: 5vh;
+  margin-bottom: 8%;
+
+
+}
+#discount{
+  width: 13vw;
+  height: 5vh;
+  margin-bottom: 8%;
+}
+.modal_body2{
+  width: 25vw;
+}
+.table1{
+  border: 2px solid lightgray;
+  width: 23vw;
+  height: 21vh;
+  
+}
+tr, td{
+  
+  border: 2px solid lightgray;
+}
+.dialpad{
+  width:23vw
+}
+.table2{
+  border: 5px solid black;
+  margin: 10px auto;
+}
+.table2 td{
+  width: 12vw;
+  text-align: center;
+  vertical-align: middle;
+  height: 12vh;
+}
+.close3{
+background-color: transparent;
+border: none;
+position:flex;
+align-items:end;
+/* right:0 */
+}
+.paidAmount{
+  border: none;
+  background-color: transparent;
+}
+.paidAmount:focus{
+  outline: none;
+}
+.table{
+  width: 100vw;
+}
+.table2 tr,td{
+  cursor: pointer;
+
 }
 .closeButton {
   display: absolute;
@@ -140,6 +296,20 @@ p {
   display: flex;
   flex-direction: row;
 }
+.price p{
+  margin: 1%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+h6{
+  overflow-y: hidden;
+}
+/* input[type=number] {
+  -moz-appearance: textfield;
+} */
 
 @media (max-width: 1024px){
 .img{
@@ -158,8 +328,26 @@ ul li h5,p{
   width: 25px;
   /* margin-right: 0; */
 }
+.modal{
+  width: 90vw;
+  margin: 5% 5% auto 5%;
 }
-@media (max-width: 768px){
+.modal_body1{
+  width: 54vw;
+}
+.table1{
+  width: 34vw;
+}
+.dialpad{
+  width: 34vw;
+  
+}
+.modal_body2{
+  width: 35vw;
+  
+}
+}
+@media (max-width: 768px) {
   ul li h5,p{
     margin-left: 10px;
   }
@@ -183,5 +371,64 @@ ul li h5,p{
 .number{
   width: 35px;
   /* margin-right: 0; */
+
+}
+.modal_body{
+  display: flex;
+  flex-direction: column;
+
+}
+.modal_body1{
+  width: 90vw;
+}
+#discount{
+  width: 24vw;
+  margin-top: 1%;
+}
+.modal_body2{
+  width: 90vw;
+
+}
+.table1{
+  width: 84vw;
+  margin: auto 3%;
+  overflow-y: hidden;
+}
+
+.dialpad{
+  width: 90vw;
+}
+#payment{
+  width: 31vw;
 }
 }
+
+@media (max-width: 426px) {
+  .modal_body11 {
+    flex-direction: column;
+  }
+  .modal{
+    overflow-y: scroll;
+    height: 90vh;
+  }
+  .table1{
+    overflow-y: hidden;
+  }
+  .table2{
+    width: 62vw;
+  }
+  
+  #discount{
+    width: 54vw;
+  }
+  .paymethods{
+    flex-direction: column;
+  }
+  #payment{
+    width: 54vw;
+    border: 2px solid #c9c9c9;
+  }
+
+}
+
+

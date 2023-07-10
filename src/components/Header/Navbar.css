@@ -100,6 +100,13 @@ search box button
  
  .titleofnav{
   overflow-y: hidden;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+ }
+ .titleofnav img{
+  border-radius: 55px;
  }
  .sidenav {
   height: 100%; /* 100% Full-height */

@@ -117,7 +117,7 @@ const ContextProvider = ({ children }) => {
     quantityDecrease: qtyDec,
     removeItem: remItem,
   };
-  console.log(CartProvider);
+  // console.log(CartProvider);
   return (
     <CartContext.Provider value={CartProvider}>{children}</CartContext.Provider>
   );
